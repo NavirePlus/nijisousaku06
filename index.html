@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="bg-white pb-6 sm:pb-8 lg:pb-12">
+    <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+      <header class="flex justify-between items-center py-4 md:py-8 mb-4 border-b">
+        <!-- logo - start -->
+        <a href="/" class="inline-flex items-center text-black-800 text-2xl md:text-3xl font-bold gap-2.5" aria-label="logo">
+          <img src="./images/logo.png" class="w-full h-full object-cover object-center" />
+        </a>
+        <!-- logo - end -->
+
+        <!-- nav - start -->
+        <nav class="hidden lg:flex gap-12 2xl:ml-16">
+          <a href="#" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">TOP</a>
+          <a href="#book" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">頒布情報</a>
+          <a href="#samples" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">サンプル</a>
+        </nav>
+        <!-- nav - end -->
+
+        <!-- buttons - start -->
+        <button type="button" class="inline-flex items-center lg:hidden bg-gray-200 hover:bg-gray-300 focus-visible:ring ring-indigo-300 text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+          </svg>
+
+          Menu
+        </button>
+        <!-- buttons - end -->
+      </header>
+    </div>
+  </div>
+
+  <div class="bg-white pb-6 sm:pb-8 lg:pb-12">
+    <div class="max-w-screen-xl px-4 md:px-8 mx-auto">
+      <!-- text - start -->
+      <div class="mb-10 md:mb-16">
+        <h1 id="book" class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6">#にじそうさく06 頒布情報</h1>
+      </div>
+      <!-- text - end -->
+
+      <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+        <div>
+          <div class="h-64 md:h-auto bg-gray-100 overflow-hidden rounded-lg shadow-lg">
+            <img src="./images/hyoushi.png" loading="lazy" class="w-full h-full object-cover object-center" />
+          </div>
+        </div>
+  
+        <div class="md:pt-8">
+          <h1 class="text-gray-800 text-2xl sm:text-3xl font-bold text-center md:text-left mb-4 md:mb-6">新刊</h1>
+  
+          <h2 class="text-gray-800 text-xl sm:text-2xl font-semibold text-center md:text-left mb-2 md:mb-4">内容</h2>
+          <p class="text-gray-600 sm:text-lg mb-6 md:mb-8 pl-2">
+            ルイス・キャミーメインのイラスト本になります。<br />
+            ※フルトイやハリオ家などのイラストも含みます
+          </p>
+  
+          <h2 class="text-gray-800 text-xl sm:text-2xl font-semibold text-center md:text-left mb-2 md:mb-4">仕様</h2>
+          <div class="text-gray-600 sm:text-lg mb-6 md:mb-8 pl-2">
+            <ul class="list-disc list-inside">
+              <li>B5サイズ</li>
+              <li>フルカラー</li>
+              <li>本文8ページ</li>
+            </ul>
+          </div>
+
+          <h2 class="text-gray-800 text-xl sm:text-2xl font-semibold text-center md:text-left mb-2 md:mb-4">価格</h2>
+          <p class="text-gray-600 sm:text-lg mb-6 md:mb-8 pl-2">
+            200円
+          </p>
+
+          <h2 class="text-gray-800 text-xl sm:text-2xl font-semibold text-center md:text-left mb-2 md:mb-4">頒布スペース</h2>
+          <p class="text-gray-600 sm:text-lg mb-6 md:mb-8 pl-2">
+            L-47
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- samples -->
+  <div class="bg-white pb-6 sm:pb-8 lg:pb-12">
+    <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+      <!-- text - start -->
+      <div class="mb-10 md:mb-16">
+        <h2 id="samples" class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6">サンプル</h2>
+      </div>
+      <!-- text - end -->
+    
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-6 xl:gap-8">
+        <!-- image - start -->
+        <div class="group h-48 md:h-96 flex justify-end items-end bg-gray-100 overflow-hidden rounded-lg shadow-lg relative">
+          <img src="./images/sample1.png" loading="lazy" class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200" />
+      
+          <div class="bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50 absolute inset-0 pointer-events-none"></div>
+      
+          <span class="inline-block text-gray-200 text-xs md:text-sm border border-gray-500 rounded-lg backdrop-blur relative px-2 md:px-3 py-1 mr-3 mb-3">ルイス</span>
+        </div>
+        <!-- image - end -->
+    
+        <!-- image - start -->
+        <div class="group h-48 md:h-96 flex justify-end items-end bg-gray-100 overflow-hidden rounded-lg shadow-lg relative">
+        <img src="./images/sample2.png" loading="lazy" class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200" />
+    
+        <div class="bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50 absolute inset-0 pointer-events-none"></div>
+    
+        <span class="inline-block text-gray-200 text-xs md:text-sm border border-gray-500 rounded-lg backdrop-blur relative px-2 md:px-3 py-1 mr-3 mb-3">あまきゃみ</span>
+        </div>
+        <!-- image - end -->
+    
+        <!-- image - start -->
+        <div class="group h-48 md:h-96 flex justify-end items-end bg-gray-100 overflow-hidden rounded-lg shadow-lg relative">
+        <img src="./images/sample3.png" loading="lazy" class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200" />
+    
+        <div class="bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50 absolute inset-0 pointer-events-none"></div>
+    
+        <span class="inline-block text-gray-200 text-xs md:text-sm border border-gray-500 rounded-lg backdrop-blur relative px-2 md:px-3 py-1 mr-3 mb-3">フルトイ</span>
+        </div>
+        <!-- image - end -->
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white pt-4 sm:pt-10 lg:pt-12">
+    <footer class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+      <div class="flex flex-col items-center border-t pt-6">
+        <!-- nav - start -->
+        <!-- <nav class="flex flex-wrap justify-center md:justify-start gap-x-4 gap-y-2 md:gap-6 mb-4">
+          <a href="#" class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">Page</a>
+        </nav> -->
+        <!-- nav - end -->
+
+        <!-- social - start -->
+        <div class="flex gap-2">
+          <a href="https://twitter.com/cielo_fox" target="_blank" class="text-gray-400 hover:text-gray-500 active:text-gray-600 transition duration-100">
+            <svg class="w-5 h-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+            </svg>
+          </a>
+
+          <a href="https://github.com/NavirePlus" target="_blank" class="text-gray-400 hover:text-gray-500 active:text-gray-600 transition duration-100">
+            <svg class="w-5 h-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+        </div>
+        <!-- social - end -->
+      </div>
+  
+      <div class="text-gray-400 text-sm text-center py-8">Created by Navire Plus.</div>
+    </footer>
+  </div>
+</body>
+</html>
